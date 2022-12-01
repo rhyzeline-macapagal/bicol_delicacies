@@ -1,5 +1,5 @@
 *{  
-    background-color: pink;
+    background-color: #EDC4D6;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -8,11 +8,12 @@
 
 
 
+
 .navbar {
     text-align: right;
-    overflow: hidden;
-    background-color: whitesmoke;
-    position: fixed;
+    overflow: auto;
+    background-color: #EDC4D6;
+    position: right;
     padding: 4px;
     top: 0;
     width: 100%;
@@ -24,7 +25,7 @@
     float: right;
     display: block;
     color: black;
-    background-color: whitesmoke;
+    background-color: #C9B8DA ;
     text-align: center;
     padding: 14px;
     border-radius: 5px;
@@ -36,9 +37,50 @@
     background: pink;
     color: rgb(211, 2, 2);
   }
+
+
+
+
+
+
+  .sidenav {
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background-color: #F2ADA0;
+    overflow-x: hidden;
+    padding: 14px;
+    border-radius: 5px;
+    color: black;
+
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    background-color: #F2ADA0;
+    border-radius: 5px;
+  }
+  
+  .sidenav a:hover {
+   background-color: whitesmoke;
+    font: pink;
+  }
+  
+
+
+
+
+
+
 .homepics img {
-    width: 1350px;
-    height: 1000px;
+    width: 1518px;
+    height: 1350px;
 }
 header {
     background-image: url(https://filipinotimes.net/wp-content/uploads/2020/12/red-chili-siling-labuyo.jpg);
@@ -50,6 +92,11 @@ header {
 header mark{
     color: black;
     background-color: none;
+
+
+
+
+
 
 }
 div.gallery {
@@ -95,10 +142,9 @@ div.gallery {
   }
 
 
-  
+
   
 
   
  
-
 
