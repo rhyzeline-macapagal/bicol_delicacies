@@ -1,31 +1,36 @@
-*{  
-    background-color: #EDC4D6;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
+html {
+  box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-
-
+*{  
+    background-color: white;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 .navbar {
     text-align: right;
-    overflow: auto;
-    background-color: #EDC4D6;
-    position: right;
+    overflow: hidden;
+    background-color: #df5934;
+    position: fixed;
     padding: 4px;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.527);
   }
 
 .navbar a {
     display: flex;
     float: right;
     display: block;
-    color: black;
-    background-color: #C9B8DA ;
+    color: #f7efcb;
+    background-color: #df5934;
     text-align: center;
     padding: 14px;
     border-radius: 5px;
@@ -34,117 +39,72 @@
   }
 
   .navbar a:hover {
-    background: pink;
-    color: rgb(211, 2, 2);
+    color: #ffb129;
   }
-
-
-
-
-
-
-  .sidenav {
-    width: 100px;
-    position: fixed;
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background-color: #F2ADA0;
-    overflow-x: hidden;
-    padding: 14px;
-    border-radius: 5px;
-    color: black;
-
-  }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    display: block;
-    background-color: #F2ADA0;
-    border-radius: 5px;
-  }
-  
-  .sidenav a:hover {
-   background-color: whitesmoke;
-    font: pink;
-  }
-  
-
-
-
-
-
-
 .homepics img {
-    width: 1518px;
-    height: 1350px;
+    width: 1349px;
+    height: 1000px;
 }
 header {
-    background-image: url(https://filipinotimes.net/wp-content/uploads/2020/12/red-chili-siling-labuyo.jpg);
-    padding: 20px;
+    background-image: url(https://ph-live-01.slatic.net/p/7b8300236a38a5599ed355bb708110e6.jpg);
+    padding: 35px;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
     text-align: center;
-    font-size: 70px;
-    color: rgb(255, 255, 255);
-}
-header mark{
-    color: black;
-    background-color: none;
-
-
-
-
-
 
 }
-div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50px;
     height: auto;
+    display: block;
   }
-  
-  div.desc {
-    padding: 15px;
-    text-align: justify;
-    background-color: hotpink;
-  }
+}
 
-  .responsive {
-    padding: 0 6px;
-    float: center;
-    width: 24.99999%;
-  }
-  .responsive img {
-    border-radius: 5%;
-  }
+.card {
+    box-shadow: 0 10px 10px 0 rgba(255, 0, 0, 0.473);
+}
 
+.card img{
+    width: 150px;
+    height: 200px;
+}
 
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 24.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
+.container {
+  padding: 0 16px;
+}
 
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+.title {
+  color: grey;
+}
 
-  
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
 
-  
- 
-
+.button:hover {
+  background-color: #555;
+}
