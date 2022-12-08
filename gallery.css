@@ -1,0 +1,38 @@
+* {box-sizing: border-box}
+body {
+    font-family: Verdana, sans-serif; 
+    margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+body {
+    overflow: hidden;
+    background-image: url(https://www.dronestagr.am/wp-content/uploads/2017/09/Mayon-Dawn-2-scaled.jpg);
+}
+
+.navbar {
+    text-align: right;
+    overflow: hidden;
+    background-color: #df5934;
+    position: fixed;
+    padding: 4px;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.589);
+  }
+
+.navbar a {
+    display: flex;
+    float: right;
+    display: block;
+    color: #ffffff;
+    background-color: #df5934;
+    text-align: center;
+    padding: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    color: #ffb129;
+  }     
