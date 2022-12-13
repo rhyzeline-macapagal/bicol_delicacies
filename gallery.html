@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicol's Best</title>
+    <link rel="icon" type="img/x-icon" href="https://www.pngall.com/wp-content/uploads/8/Chilli-Pepper-PNG-Images.png">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+          <div data-aos="fade-up" data-aos-delay="300" class="logo">
+            <a href="#" class="animate-charcter"><b>BICOL'S BEST: MUST-TRY DELICACIES OF BICOL</b></a>
+          </div>
+          <ul class="menu-list">
+            <div data-aos="fade-up" data-aos-delay="400" class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"  href="index.html"><b>Home</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1000" href="delicacies.html"><b>Delicacies</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1500" href="recipe.html"><b>Recipe</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2000" href="gallery.html"><b>Gallery</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2500" href="about.html"><b>About</b> </a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+  <script>
+      AOS.init({
+          duration: 800,
+          offset:150,
+      });
+  </script>
+
+  <!--START OF ANO-->
+<br>
+<br>
+<br>
+
+  <div class="container">
+    <div class="images">
+      <img data-aos="flip-left" data-aos-duration="500" src="https://i0.wp.com/whattoeatph.com/wp-content/uploads/2022/03/DSC_9120.jpg?fit=720%2C576&ssl=1" alt="Bicol Express" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://amiablefoods.com/wp-content/uploads/bicol-express-500-500x375.jpg" alt="Bicol Express" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Bicol_Express.jpg" alt="Bicol Express" />
+      
+      <img data-aos="flip-right" data-aos-duration="500" src="http://1.bp.blogspot.com/-_GI7PavOFCM/UVkNWSfyiaI/AAAAAAAAAIU/0UVhKCVOEB4/s1600/IMG_20130102_175032.jpg" alt="Kinalas" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2017/03/Kinalas-Wide.jpg?fit=1080%2C720&ssl=1"  alt="Kinalas" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://www.nagacityguide.com/wordpress/wp-content/uploads/2016/01/14324323_1318660258174773_8868580225108867996_o.jpg" alt="Kinalas" />
+
+      <img data-aos="flip-left" data-aos-duration="500" src="https://cdn.tasteatlas.com/images/dishes/6a1409144d7b4636a623b40715cb75f3.jpg" alt="Kinunot" />
+      <img data-aos="flip-left" data-aos-duration="500" src="http://www.lutongbahayrecipe.com/wp-content/uploads/2019/07/lutong-bahay-kinunot.jpg" alt="Kinunot">
+      <img data-aos="flip-left" data-aos-duration="500" src="https://alwayshungry.ph/wp-content/uploads/7-9.jpg" alt="Kinunot" />
+      
+      <img data-aos="flip-right" data-aos-duration="500" src="https://i.redd.it/prs4ndjuj9071.png" alt="Pancit Bato" />
+      <img data-aos="flip-right" data-aos-duration="500" src="http://www.urcflour.com/images/2020/11/20/3a9ff7d1798be7f820c1d251f05980276725ee49.jpg" alt="Pancit Bato" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://legazpifoodblog.files.wordpress.com/2018/02/22942096_07878dce6c.jpg" alt="Pancit Bato" />
+      
+      <img data-aos="flip-left" data-aos-duration="500" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/1c/df/b5/kandingga.jpg" alt="Kandingga" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2018/09/Kandingga-Wide.jpg?ssl=1" alt="Kandingga" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://i.pinimg.com/originals/97/3e/d3/973ed392158552299a93d4fec87e1442.jpg" alt="Kandingga" />
+
+      <img data-aos="flip-right" data-aos-duration="500" src="https://i.ytimg.com/vi/wCD_onB9JPY/maxresdefault.jpg" alt="Biniribid/Pilipit" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://yummykitchentv.com/wp-content/uploads/2021/04/pilipit-recipe-1024x802.jpg" alt="Biniribid/Pilipit" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://3.bp.blogspot.com/-vsH0Fr9aYLE/WRKjGNVkbwI/AAAAAAAABOY/801W92caeS0s2w-gFsmQo-wozcXYcPttwCEw/s1600/IMG_5485.JPG" alt="Biniribid/Pilipit" />
+      
+      <img data-aos="flip-left" data-aos-duration="500" src="https://i0.wp.com/www.appetizingadventure.com/wp-content/uploads/2016/06/1st-Colonial-Grill-Legazpi-Albay-Bicol-011.jpg" alt="Sili Ice Cream" />
+      <img data-aos="flip-left" data-aos-duration="500" src="http://2.bp.blogspot.com/-9MBDdni56Ms/U7U6s90g_dI/AAAAAAAABbo/GXZLIQCEm64/w1200-h630-p-k-no-nu/sili_ice_cream.jpg" alt="Sili Ice Cream" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://www.nagacityguide.com/wordpress/wp-content/uploads/2017/03/12357096_1095130600520238_5079373847868244413_o.jpg" alt="Sili Ice Cream" />
+      
+      <img data-aos="flip-right" data-aos-duration="500" src="https://fastly.4sqi.net/img/general/600x600/470535369_-9nnC9WoSIOmNPnMOknnBF3DCHbmeqyLyG-1Jvsett0.jpg" alt="Tiwi Halo Halo" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://gttp.imgix.net/370889/x/0/10-best-albay-restaurants-legazpi-city-bicolano-cuisine-mayon-volcano-view-8.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Tiwi Halo Halo" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/16/bd/85/they-serve-one-of-the.jpg" alt="Tiwi Halo Halo" />
+      
+      <img data-aos="flip-left" data-aos-duration="500" src="https://panlasangpinoy.com/wp-content/uploads/2017/09/Ginataang-Santol-Sinantolan.jpg" alt="Sinantol" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://3.bp.blogspot.com/-amqfjWf4j5s/WLEsKrgPocI/AAAAAAAAXyo/s2iKdzH6VY8bQWIOmZt1Wqt13W0gV61uwCLcB/s16000/DSC_3577.JPG" alt="Sinantol" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://www.sarappinoyrecipes.com/wp-content/uploads/2018/11/Ginataang-Santol-Recipe-e1541513203792.jpg" alt="Sinantol" />
+      
+      <img data-aos="flip-right" data-aos-duration="500" src="https://sgp1.digitaloceanspaces.com/tz-mag-ph/wp-content/uploads/2020/10/090910101515/guinobatan-longganisa-in-the-philippines-500x500.png" alt="Longganisa de Guinobatan" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://1.bp.blogspot.com/-sSxL3L1A4IQ/Xfrw5iHNxpI/AAAAAAAAAK0/0Ij9Y6diBHUlhAMHT710Tvn_mOFLlh_owCLcBGAsYHQ/s1600/guinobatanlongganisa.jpg" alt="Longganisa de Guinobatan" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.18169-9/24993146_1351285108351433_6214891497022504806_n.jpg?stp=dst-jpg_p526x395&_nc_cat=107&ccb=1-7&_nc_sid=110474&_nc_eui2=AeHnJ572aJtF4VXjHf1Pre6BmWgoOfpe4U2ZaCg5-l7hTXSDDR8nTEnzvH96h1lzadJT8L1JIuGvZwte7CC0Suv1&_nc_ohc=TTeQM_B_WucAX-91KW5&_nc_ht=scontent.fmnl9-2.fna&edm=AN6CN6oEAAAA&oh=00_AfA3HDQudnUYppHVLj4VKA5opE47IF06H1kl0Cr7xSwfdg&oe=63BC3DDF" alt="Longganisa de Guinobatan" />
+
+      <img data-aos="flip-left" data-aos-duration="500" src="https://i.pinimg.com/originals/40/2e/d5/402ed55f9a1ee888efb5d24d1e0f1f0e.jpg" alt="Toasted Siopao" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://2.bp.blogspot.com/-G8YlBYVfM48/UlzGa7qayNI/AAAAAAAAGQM/FV0_9PpfNyo/w1200-h630-p-k-no-nu/bicol+toasted+siopao+naga+camarines+sur.jpg" alt="Toasted Siopao" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://i0.wp.com/wanderingbakya.com/wp-content/uploads/2022/01/toasted-siopao2.jpeg?resize=800%2C400&ssl=1" alt="Toasted Siopao" />
+    
+      <img data-aos="flip-right" data-aos-duration="500" src="http://grecipes.s3.amazonaws.com/recipe_picture/1443152/ginataanglabong.jpg" alt="Ginataang Labong" />
+      <img data-aos="flip-right" data-aos-duration="500" src="http://images.summitmedia-digital.com/yummyph/images/2020/01/16/ginataanglabongrecipe1.jpg" alt="Ginataang Labong" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://images.summitmedia-digital.com/yummyph/images/2020/01/16/ginataanglabongrecipe2.jpg" alt="Ginataang Labong" />
+      
+      <img data-aos="flip-left" data-aos-duration="500" src="https://cf.shopee.ph/file/0ae043a947480046d814cad9e7294706" alt="Pili Tart" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://cf.shopee.ph/file/b66b355929042b8025ab85d16aea4b11" alt="Pili Tart" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://pagkaraansamgalabi.files.wordpress.com/2018/02/12391401_1223970057620317_2647506487292899092_n.jpg" alt="Pili Tart" />
+      
+      <img data-aos="flip-right" data-aos-duration="500" src="https://www.wikihow.com/images/2/2b/Make-Crispy-Pili-Final-Version-2.jpg" alt="Pili Nut Candy" />
+      <img data-aos="flip-right" data-aos-duration="500" src="http://www.lutongbahayrecipe.com/wp-content/uploads/2019/06/lutong-bahay-recipe-santan.jpg" alt="Pili Nut Candy" />
+      <img data-aos="flip-right" data-aos-duration="500" src="https://i0.wp.com/wanderingbakya.com/wp-content/uploads/2017/09/pilinuts.jpg" alt="Pili Nut Candy" />
+      
+      <img data-aos="flip-left" data-aos-duration="500" src="http://images.summitmedia-digital.com/yummyph/images/2017/02/16/laing-webex.jpg" alt="Laing" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://amiablefoods.com/wp-content/uploads/laing-1000.jpg" alt="Laing" />
+      <img data-aos="flip-left" data-aos-duration="500" src="https://images.deliveryhero.io/image/foodpanda/recipes/laing-recipe-1.jpg" alt="Laing" />
+    
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
