@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicol's Best</title>
+    <link rel="icon" type="img/x-icon" href="https://www.pngall.com/wp-content/uploads/8/Chilli-Pepper-PNG-Images.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+          <div data-aos="fade-up" data-aos-delay="600" class="logo">
+            <a href="#" class="animate-charcter">bicol's best: must-try delicacies of bicol</a></div>
+          
+          <ul class="menu-list">
+            <div data-aos="fade-up" data-aos-delay="600" class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"  href="index.html"><b>Home</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1000" href="delicacies.html"><b>Delicacies</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1500" href="recipe.html"><b>Recipe</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2000" href="gallery.html"><b>Gallery</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2500" href="about.html"><b>About</b> </a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars" style="font-size:48px;color:hotpink"></i>
+          </div>
+        </div>
+      </nav>
+    
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+<script>
+    AOS.init({
+        duration: 800,
+        offset:150,
+    });
+</script>
+
+<div data-aos="fade-right"  data-aos-delay="200" class="slider">
+  <figure>
+    <div class="slide">
+      <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/assets/best-of-bicol-landscape.jpg?maxsidesize=100&path=&hash=">
+    </div>
+
+    <div class="slide">
+      <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/assets/2-best-of-bicol-landscape.jpg?maxsidesize=100&path=&hash=">
+    </div>
+
+    <div class="slide">
+      <img src="https://assets-metrostyle.abs-cbn.com/prod/metrostyle/attachments/3f2feda3-bd33-46c4-a69a-60ddf4e7557b_3%20best%20of%20bicol%20landscape.jpg">
+    </div>
+
+    <div class="slide">
+      <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/assets/best-of-bicol-landscape.jpg?maxsidesize=100&path=&hash=">
+    </div>
+
+    <div class="slide">
+      <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/assets/2-best-of-bicol-landscape.jpg?maxsidesize=100&path=&hash=">
+    </div>
+
+    <div class="slide">
+      <img src="https://assets-metrostyle.abs-cbn.com/prod/metrostyle/attachments/3f2feda3-bd33-46c4-a69a-60ddf4e7557b_3%20best%20of%20bicol%20landscape.jpg">
+    </div>
+    </figure>
+</div>  
+
+
+</body>
+</html>
