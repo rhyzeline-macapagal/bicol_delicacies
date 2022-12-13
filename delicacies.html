@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicol's Best</title>
+    <link rel="icon" type="img/x-icon" href="https://www.pngall.com/wp-content/uploads/8/Chilli-Pepper-PNG-Images.png">
+    <link rel="stylesheet" href="delicacies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+          <div data-aos="fade-right" data-aos-delay="300" class="logo">
+            <a href="#" class="animate-charcter">bicol's best: must-try delicacies of bicol</a></div>
+          
+          <ul class="menu-list">
+            <div data-aos="fade-right" data-aos-delay="400" class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"  href="index.html"><b>Home</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1000" href="delicacies.html"><b>Delicacies</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1500" href="recipe.html"><b>Recipe</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2000" href="gallery.html"><b>Gallery</b></a></li>
+            <li><a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2500" href="about.html"><b>About</b> </a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars" style="font-size:48px;color:hotpink"></i>
+          </div>
+        </div>
+      </nav>
+    
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+
+
+<div class="main">
+  <div class="top">
+  <ul class="cards">
+    <li data-aos="fade-right" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://amiablefoods.com/wp-content/uploads/bicol-express-500-500x375.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Bicol Express</h2>
+          <p class="card_text"><br>The Bicol Express is arguably the most famous and iconic dish from the region. 
+              It was named after the passenger train from Manila to Bicol and is also called “sinilihan.” 
+              It’s one of the most popular regional dishes in the Phillipines, best known for its spicyness.</p>
+        </div>
+      </div>
+  </li>
+
+    <li data-aos="fade-up" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2017/03/Kinalas-Wide.jpg?fit=1080%2C720&ssl=1"></div>
+        <div class="card_content">
+          <h2 class="card_title">Kinalas</h2>
+          <p class="card_text"><br>This homegrown noodle recipe from Naga is something you shouldn’t miss when you’re in Bicol. 
+              Visually, it’s comparable to beef mami, a dish most Filipinos are familiar with. But what makes Kinalas 
+              different is the addition of a thick and dark brown sauce on top of the noodles, which is often likened to a pancit palabok sauce. </p>
+        </div>
+      </div>
+    </li>
+
+
+    <li data-aos="fade-left" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2016/09/Kinunot-Wide.jpg?fit=1080%2C720&ssl=1"></div>
+        <div class="card_content">
+          <h2 class="card_title">Kinunot</h2>
+          <p class="card_text"><br>Bicol also has a delectable seafood dish aptly called Kinunot, which literally means “to tear apart” in Bicolano. 
+              It is usually made with flaked fish, specifically shark or stingray meat. </p>
+        </div>
+      </div>
+    </li>
+  </div>
+
+    <ul class="cards">
+    <li data-aos="fade-right" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="http://www.urcflour.com/images/2020/11/20/3a9ff7d1798be7f820c1d251f05980276725ee49.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Pancit Bato</h2>
+          <p class="card_text"><br>Pancit Bato is a noodle dish that closely resembles pancit canton. 
+                  This originated in the province of Camarines Sur, Bicol region in a municipality known as Bato.
+                  It’s said to resemble pancit canton, but the special noodles used are actually a bit thicker and firmer in bite, similar to miki. </p>
+
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-up" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2018/09/Kandingga-Wide.jpg?ssl=1"></div>
+        <div class="card_content">
+          <h2 class="card_title">Kandingga</h2>
+          <p class="card_text"><br>The Bicolano’s way of preparing bopis, kandingga is made with pork bits such as heart, lungs, and spleen that are cooked in 
+              vinegar and coconut milk. And of course, a handful of siling labuyo is also added to the mix.</p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-left" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://i.ytimg.com/vi/EFTPnXSYoLM/maxresdefault.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Biniribid/Pilipit</h2>
+          <p class="card_text"><br>Like most Bicolano food staples, this delicacy also uses coconut milk and rice flour as its main ingredient. 
+              It is then deep fried and either topped in white sugar or brown sugar glaze.</p>
+        </div>
+      </div>
+    </li>
+
+
+<div class="main">
+  <ul class="cards">
+    <li data-aos="fade-right" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="http://images.summitmedia-digital.com/yummyph/images/2020/08/06/1st-colonial-sili-ice-cream-delivery.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Sili Ice Cream</h2>
+          <p class="card_text"><br>Spice up your taste bud and 
+              indulge with Albay’s ice cream with a kick of chili! Its strawberry-like color looks so delicious and might fool you at first sight. 
+              Introduced by 1st colonial grill restaurant, this ice cream’s primary ingredients include “siling labuyo” and coconut milk which is the 
+              local food symbol of Bicol. As you savor it, you’ll feel a lingering spicy sensation on your tongue, feeling the combination of hotness 
+              and coldness in every scoop.</p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-up" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2017/life/04/20/halohalo-2017-042017.jpg?ext=.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Tiwi Halo Halo</h2>
+          <p class="card_text"><br>The bicol’s most popular halo-halo is in Tiwi, Albay, at the DJC Halo-Halo. This has a unique, tasty blend of sweet and salty flavor. 
+              Its finely mixed ingredients are genuinely a reflection of Albayano’s style. It is a concoction of snowy perfect shaved ice. 
+              Minatamis na saba (bananas cooked in sugar syrup), and ube halaya (purple yam).</p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-left" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://www.wheninmanila.com/wp-content/uploads/2020/05/Ginataang-Santol-by-@nanayangge831.png?width=1200&enable=upscale"></div>
+        <div class="card_content">
+          <h2 class="card_title">Sinantol</h2>
+          <p class="card_text"><br>Sinantol or Ginataang Santol is a Bicolano dish starring one of the most produced crops, the santol or cotton fruit. 
+              It’s prepared with either fish or pork, shredded santol, chili, and gata. It has the perfect blend of saltiness, sourness, 
+              spiciness, and creaminess.</p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-right" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://sgp1.digitaloceanspaces.com/tz-mag-ph/wp-content/uploads/2020/10/090910101515/guinobatan-longganisa-in-the-philippines-768x480.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">Longganisa de Guinobatan</h2>
+          <p class="card_text"><br>This time, another sumptuous delicacy from the town of Guinobatan, Albay. Take a big bite of Longganisa de Guinobatan. 
+              It is a pork sausage with a salty flavor dipped in vinegar and egg. Unlike other native sausages in the country, Guinobatan’s 
+              product is being made manually.It also has fewer additives, so this is perfect for those who usually don’t fond of foods with more preservatives.</p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-up" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://2.bp.blogspot.com/-G8YlBYVfM48/UlzGa7qayNI/AAAAAAAAGQM/FV0_9PpfNyo/w1200-h630-p-k-no-nu/bicol+toasted+siopao+naga+camarines+sur.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Toasted Siopao</h2>
+          <p class="card_text"><br>One Bicolano specialty that you should try is the toasted siopao. It’s not the same steamed siopao that we used to know but 
+              its like a “monay bread” stuffed with pork asado and boiled egg. It is actually not fried but baked until well done thus, “toasted”. 
+              Its asado filling is saucy and very flavorful. You don’t need to put siopao sauce when eating toasted siopao. The bun also tastes 
+              good and its nicely toasted yet soft in the inside.</p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-left" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="http://images.summitmedia-digital.com/yummyph/images/2020/01/16/ginataanglabongrecipe1.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Ginataang Labong</h2>
+          <p class="card_text"><br>Bicolano cuisine is indeed famous for two things – coconut and chili. Guinataang labong is made of young, 
+              soft bamboo shoots cooked in coconut milk with shrimp paste or sardines to taste. The addition of fiery red 
+              peppers makes this creamy dish a signature Bicolano delicacy worth trying and coming back for more.</p>
+        </div>
+      </div>
+    </li>
+
+
+<div class="main">
+  <ul class="cards">
+    <li data-aos="fade-right" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://live.staticflickr.com/8288/7837904384_35e90b13f0_b.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Pili Tart</h2>
+          <p class="card_text"><br>The Pili tarts is one of the most common and possibly one of the most populart declicacy of Bicol made from Pili. 
+              The mini tart shells are filled with sweet chewy and buttery caramel filling topped with sweetened local delicious 
+              pili nuts. </p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-up" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://www.wikihow.com/images/2/2b/Make-Crispy-Pili-Final-Version-2.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Pili Nut  Candy</h2>
+          <p class="card_text"><br>Pili Nut candy is this crunchy candy that satisfies taste buds perfectly. It can be made in 3 various flavors: 
+              sugar-coated or sweet glazed and sprinkled with salt and hot and spicy. Any of those is worth the try.  </p>
+        </div>
+      </div>
+    </li>
+
+    <li data-aos="fade-left" data-aos-duration="2000" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://images.aws.nestle.recipes/resized/8477f721f4bc07d1c61881007efdd76d_Laing_(Main_Image)_944_531.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Laing</h2>
+          <p class="card_text"><br>Laing is a Filipino dish of shredded or whole taro leaves with meat or 
+              seafood cooked in thick coconut milk spiced with labuyo chili, lemongrass, garlic, shallots, ginger, 
+              and shrimp paste. It originates from the Bicol Region, where it is known simply as pinangat. </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <script>
+      AOS.init({
+          duration: 800,
+          offset:150,
+      });
+  </script>
+
+</body>
+</html>
